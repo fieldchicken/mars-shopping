@@ -31,7 +31,22 @@ function ShoppingCart() {
 function Product() {
   return(
     <div className="product">
-      <img src={shoppingCartItems[0].image} width="100"/>
+      <div className="product-title">
+       <h3>Placeholder</h3> 
+      </div>
+      <div className="product-content">
+        <div className="product-img">
+          <img src={shoppingCartItems[0].image} />
+        </div>
+        <div className="product-desc">
+          <p>{shoppingCartItems[0].description}</p>
+        </div>
+      </div>
+      <div className="product-footer">
+        <p>${shoppingCartItems[0].price}</p>
+        <div className="quantity">
+        </div>
+      </div>
     </div>
   )
 }
